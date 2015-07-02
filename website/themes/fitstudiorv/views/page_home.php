@@ -1,46 +1,53 @@
 <ion:partial view="header" />
 
-    <div class="row">
-      <div class="col-md-8">
-        <ion:page id="slideshow">
-         <ion:medias type="picture" limit="1"> 
-            <div class="bum">
-              <img src="<ion:media:src />" alt="<ion:media:title />" style="width:100%;"/>                  
-            </div>
-          </ion:medias>
-        </ion:page>
-      </div><!-- /.col-md-8 -->      
-      <div class="col-md-4">
-        <div class="panel panel-default">
-          <div class="panel-heading">Panel heading without title</div>
-            <div class="panel-body">
-                    Panel content
-            </div>
+    <section>
+      <div class="row">
+        <div class="col-sm-7 col-md-8">
+          <ion:page id="slideshow">
+            <ion:articles:article>
+              <ion:medias type="picture" limit="1">
+                <img src="<ion:media:src />" alt="<ion:media:title />" />                  
+              </ion:medias>
+            </ion:articles:article>
+          </ion:page>
         </div>
-      </div>     
-  </div><!-- /.row -->
-  <div class="row">
-      <ion:page id="sporty"> 
-        <div class="col-sm-12">
-          <ion:page:title tag="h1" />
-        </div> 
+        <div class="col-sm-5 col-md-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">Panel heading without title</div>
+            <div class="panel-body">
+              Panel content
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section>
+      <div class="row">
+        <ion:page id="sporty">
+          <div class="col-sm-12">
+            <ion:page:title tag="h2" />
+          </div>
           <ion:articles limit="6">
-          <ion:article>
-           <div class="col-sm-6 col-md-4">
-            <ion:article:title tag="h3" characters="20"/>
-            <ion:medias type="picture" limit="1"> 
-              <div class="item-image">              
-                <a href="<ion:media:src />">
-                  <img src="<ion:media:src />" alt="<ion:media:title />" style="width:100%;" />
+            <ion:article>
+              <div class="col-xs-12 col-sm-6 col-md-4 sports-item">
+                <a href="#">
+                  <div>
+                    <ion:title tag="h3" />
+                    <ion:medias type="picture" limit="1">
+                      <img src="<ion:media:src size="360, 240" method="adaptive" />" alt="<ion:media:title />" />
+                    </ion:medias> 
+                  </div>
                 </a>
               </div>
-              </ion:medias>                                       
-            </div>
             </ion:article>
-          </ion:articles>          
+          </ion:articles>
+        </ion:page>
+      </div>
+    </section>
 
-      </ion:page>             
-    </div> 
+
+
     
     
 
