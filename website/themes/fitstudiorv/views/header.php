@@ -16,32 +16,37 @@
     <script src="<ion:theme_url/>assets/js/bootstrap.min.js"></script>
     <script src="<ion:theme_url/>assets/lightbox/js/lightbox.min.js"></script>
     <link href="<ion:theme_url/>assets/lightbox/css/lightbox.css" rel="stylesheet" />
-    <link href="<ion:theme_url/>assets/css/main.css" rel="stylesheet">
+    <link href="<ion:theme_url/>assets/css/main.css" rel="stylesheet"> 
   </head>
   <body>
-
   <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <a href="<ion:home_url />">
-          <img src="<ion:theme_url/>assets/images/logo.png" alt="Fit Studio Rožňava">
-        </a>
-      </div>
-    </div><!-- /.row -->
-    <nav class="navbar">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div><!-- /.navbar-header -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ion:navigation active_class="active" tag="ul" class="nav navbar-nav" menu="main">
-          <li>
-            <a href="<ion:url />"><ion:title /></a>
-          </li>
-        </ion:navigation>
-      </div><!-- /.navbar-collapse -->
-    </nav>
+    <header>   
+      <div class="row">         
+        <div class="col-md-4">
+          <a href="<ion:home_url />">
+            <img src="<ion:theme_url/>assets/images/fit_studio_roznava.png" alt="Fit Studio Rožňava">
+          </a>
+        </div>
+        <div class="col-md-8">
+          <nav class="navbar">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div><!-- /.navbar-header -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ion:navigation active_class="active" tag="ul" class="nav navbar-nav navbar-right" menu="main">
+                <li>
+                  <a href="<ion:url />"><ion:title /></a>
+                </li>
+              </ion:navigation>
+            </div><!-- /.navbar-collapse -->
+          </nav>
+        </div>
+      </div><!-- /.row -->
+    </header>
+    
+    
