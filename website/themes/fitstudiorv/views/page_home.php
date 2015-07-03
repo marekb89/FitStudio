@@ -1,16 +1,20 @@
 <ion:partial view="header" />
 
-    <section>
-      <div class="row">
-        <div class="col-sm-7 col-md-8">
-          <ion:page id="slideshow">
-            <ion:articles:article>
-              <ion:medias type="picture" limit="1">
-                <img src="<ion:media:src />" alt="<ion:media:title />" />                  
-              </ion:medias>
-            </ion:articles:article>
-          </ion:page>
-        </div>
+    <section>     
+      <div class="row">       
+        <div class="col-sm-7 col-md-8">        
+           <div id="owl-demo" class="owl-carousel owl-theme">
+            <ion:page id="slideshow">
+              <ion:articles>
+                <ion:article>
+                  <ion:medias type="picture" limit="1">
+                    <div class="item"><img src="<ion:media:src />" alt="<ion:article:name />"></div>
+                  </ion:medias>
+                </ion:article>
+              </ion:articles>
+            </ion:page>
+          </div>        
+        </div>         
         <div class="col-sm-5 col-md-4">
           <div class="panel panel-default">
             <div class="panel-heading">Panel heading without title</div>
@@ -19,9 +23,8 @@
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    
+      </div>      
+    </section>    
     <section>
       <div class="row">
         <ion:page id="sporty">
@@ -44,11 +47,26 @@
           </ion:articles>
         </ion:page>
       </div>
-    </section>
+    </section>    
+   <script>
+    $(document).ready(function() {
+      $("#owl-demo").owlCarousel({
 
+      navigation : true,
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      singleItem : true,
+      autoPlay: 5000
 
+      // "singleItem:true" is a shortcut for:
+      // items : 1, 
+      // itemsDesktop : false,
+      // itemsDesktopSmall : false,
+      // itemsTablet: false,
+      // itemsMobile : false
 
-    
-    
+      });
+    });
+</script>
 
 <ion:partial view="footer" />
