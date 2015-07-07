@@ -34,7 +34,7 @@
           <ion:articles limit="6">
             <ion:article>
               <div class="col-xs-12 col-sm-6 col-md-4 sports-item">
-                <a href="#">
+                <a href="<ion:article:url />">
                   <div>
                     <ion:title tag="h3" />
                     <ion:medias type="picture" limit="1">
@@ -47,7 +47,8 @@
           </ion:articles>
         </ion:page>
       </div>
-    </section>    
+    </section>
+   <ion:partial view="rozvrh" />    
    <script>
     $(document).ready(function() {
       $("#owl-demo").owlCarousel({
