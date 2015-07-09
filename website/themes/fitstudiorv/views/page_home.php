@@ -29,13 +29,13 @@
       <div class="row">
         <ion:page id="sporty">
           <div class="col-sm-12">
-            <ion:page:title tag="h2" />
+            <ion:page:title tag="h2" class="sport-title" />
           </div>
           <ion:articles limit="6">
             <ion:article>
               <div class="col-xs-12 col-sm-6 col-md-4 sports-item">
                 <a href="<ion:article:url />">
-                  <div>
+                  <div class="item-inner">
                     <ion:title tag="h3" />
                     <ion:medias type="picture" limit="1">
                       <img src="<ion:media:src size="360, 240" method="adaptive" />" alt="<ion:media:title />" />

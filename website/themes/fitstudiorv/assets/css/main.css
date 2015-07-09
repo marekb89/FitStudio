@@ -1,6 +1,16 @@
 /* Main CSS */
+body {
+ background-image: url(../images/background.png); 
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 
 /* Global styles */
+h1 {
+  font-size: 30px;
+}
+
 img {
   max-width: 100%; 
 }
@@ -17,18 +27,21 @@ header {
 }
 
 .navbar-nav > li > a {
-  color: #f65e13;
+  color: rgba(84,0,66,1);
   background-color: white;
   transition: background-color 0.3s;
+  border-style: solid;
+  border-width: 3px;
+  border-color: white;
+   
 }
 
 .nav > li > a:focus,
 .nav > li > a:hover,
 .nav > li > a.active {
-  color: red;  
-  background-color: white;
-  transition: all 0.3s ease-in-out 0s;
-  text-shadow: 0 0 50px red; 
+  border-top-color: rgba(84,0,66,1);  
+  color: rgba(84,0,66,1);  
+  background-color: white; 
 }
 
 @media (min-width: 768px) {  
@@ -46,11 +59,11 @@ header {
 @media (max-width: 992px) {
   .navbar-nav {
     margin: 0px -15px;
-    background-color: #f65e13;
+    background-color: rgba(84,0,66,1);
   }
 
   .navbar-header {
-    background-color: #f65e13;
+    background-color: rgba(84,0,66,1);
   }
   
   a.navbar-brand {
@@ -61,6 +74,19 @@ header {
   .navbar-toggle .icon-bar {
     background-color: #FFF;
   }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .navbar-collapse {
+    padding-left: 0px;
+    padding-right: 0px;
+  }  
+  
+  .nav > li > a {
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 52px;
+  }   
 }
 
 @media (max-width: 992px) {
@@ -88,6 +114,96 @@ header {
 /* Home page */
 .sports-item {
   margin-bottom: 30px;
+} 
+
+.sport-title {
+  position: relative;
+  color: white;
+  background-color: rgba(84,0,66,1);
+  background-image: url(../images/bg1.png);
+  padding: 10px;   
+  margin-bottom: 20px;
+}
+
+.sport-title:after { 
+  position: absolute;
+  border-left: 7px solid rgba(0, 0, 0, 0);
+  border-right: 7px solid rgba(0, 0, 0, 0);
+  border-top: 7px solid rgba(84,0,66,1);
+  bottom: -7px;
+  content: " ";
+  left: 40px;
+  margin-left: -5px;
+}
+
+.sport-title.taebo {
+   <ion:article:name />
+}
+
+@media (min-width: 768px) { 
+  .sport-tittle h2:after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 7px solid rgba(0, 0, 0, 0);
+    border-right: 7px solid rgba(0, 0, 0, 0);
+    border-top: 7px solid rgba(84,0,66,1);
+    bottom: -7px;
+    content: " ";
+    left: 40px;
+    margin-left: -5px;
+    padding-bottom: 25px;
+  } 
+   .sport-tittle h1:after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 7px solid rgba(0, 0, 0, 0);
+    border-right: 7px solid rgba(0, 0, 0, 0);
+    border-top: 7px solid rgba(84,0,66,1);
+    bottom: -7px;
+    content: " ";
+    left: 40px;
+    margin-left: -5px;
+    padding-bottom: 25px;
+  } 
+}
+
+.sport-tittle h3 {
+  color: white;
+  background-color: rgba(246,94,19,0.80);
+  background-image: url(../images/bg1.png);
+  padding: 15px;   
+  margin-bottom: 25px;
+}
+
+.sport-tittle h3:after { 
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 7px solid rgba(0, 0, 0, 0);
+  border-right: 7px solid rgba(0, 0, 0, 0);
+  border-top: 7px solid rgba(246,94,19,0.80);
+  bottom: -7px;
+  content: " ";
+  left: 40px;
+  margin-left: -5px;
+}
+
+@media (min-width: 768px) { 
+  .sport-tittle h3:after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 7px solid rgba(0, 0, 0, 0);
+    border-right: 7px solid rgba(0, 0, 0, 0);
+    border-top: 7px solid rgba(246,94,19,0.80);
+    bottom: -7px;
+    content: " ";
+    left: 40px;
+    margin-left: -5px;
+    padding-bottom: 25px;
+  } 
 }
 
 .sports-item div {
@@ -107,6 +223,11 @@ header {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.7);
 }
+.sports-item:nth-child(4n+1) h3,
+.sports-item:nth-child(5n+1) h3,
+.sports-item:nth-child(6n+1) h3 {
+  text-align: left; 
+}
 
 .sports-item a {
   color: #FFF;
@@ -121,15 +242,14 @@ header {
   z-index: 1; 
 }
 
-.sports-item div:before {
+.item-inner:before {
   position: absolute;
   width: 200px;
   height: 200px;
   left: -100px;
   bottom: -100px;
   content: " ";
-  background-color: #f65e13;
-  background-image: url('images/pattern.png');
+  background-image: url(../images/bg1.png);
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
@@ -138,15 +258,14 @@ header {
   z-index: 50;
 }
   
-.sports-item div:after {
+.item-inner:after {
   position: absolute;
   width: 200px;
   height: 200px;
   right: -100px;
-  top: -100px;
+  top: -100px;  
   content: " ";
-  background-color: #f65e13;
-  background-image: url('images/pattern.png');
+  background-image: url(../images/bg1.png);
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
@@ -155,22 +274,70 @@ header {
   z-index: 50;
 }
 
-/* Galery*/
-
-.media-galery {
-  display: inline-block;
-  display: block;
+.sports-item:nth-child(1n+1) .item-inner:before {
+  background-color: #bc2c18;
 }
 
-/* Video*/
+.sports-item:nth-child(2n+1) .item-inner:before {
+  background-color: #5b7bb6;
+}
+.sports-item:nth-child(3n+1) .item-inner:before {
+  background-color: #f65e13;  
+}
 
-.media-object-video {
-  text-align: center;
-  padding: 10px;
-}  
+.sports-item:nth-child(1n+1) .item-inner:after {
+  background-color: #bc2c18;
+}
 
-.video-container {
-  max-width: 600px;
-  margin: 0 auto;
-  float: none;
+.sports-item:nth-child(2n+1) .item-inner:after {
+  background-color: #5b7bb6;
+}
+ 
+.sports-item:nth-child(3n+1) .item-inner:after {  
+ background-color: #f65e13; 
+}
+
+.sports-item:nth-child(4n+1) .item-inner:before {
+  background-color: #f65e13;
+  bottom: auto;
+  top: -100px;
+}
+
+.sports-item:nth-child(5n+1) .item-inner:before {
+  background-color: #5b7bb6;
+  bottom: auto;
+  top: -100px;
+}
+
+.sports-item:nth-child(6n+1) .item-inner:before {
+  background-color: #bc2c18;
+  bottom: auto;
+  top: -100px;
+  
+}
+
+.sports-item:nth-child(4n+1) .item-inner:after {
+  background-color: #f65e13;
+ bottom: -100px;
+ top: auto;
+}
+
+.sports-item:nth-child(5n+1) .item-inner:after {
+ background-color: #5b7bb6;
+ bottom: -100px;
+ top: auto;
+}
+ 
+.sports-item:nth-child(6n+1) .item-inner:after {  
+ background-color: #bc2c18;
+ bottom: -100px;
+ top: auto;
+ 
+}
+
+@media (max-width: 767px) {
+  .thumbnail {
+    margin: 0 auto;
+    max-width: 190px;
+  }
 }

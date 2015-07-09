@@ -1,31 +1,47 @@
 <ion:partial view="header" />
 
-  <div class="row">
-   <ion:articles>
+  <ion:articles>
     <ion:article>
-      <div class="col-md-12">
-      <ion:page:title tag="h1" />
-      <ion:article:subtitle title tag="h2" />
-      <ion:article:content />
-       <ion:article:medias type="picture">
-          <div class="col-xs-12 col-sm-4 col-md-2">
-            <a href="<ion:media:src />" data-lightbox="roadtrip" data-title="<ion:media:title />" class="media-galery">
-              <img src="<ion:media:src size="200, 150" method="adaptive" />" alt="<ion:media:title />" >
-            </a>
+      <article>
+        <div class="row">
+          <div class="col-sm-12">
+            <ion:title tag="h1" class="sport-title" />
+            <ion:subtitle tag="h2" />
+            <ion:content />
           </div>
-        </ion:article:medias>
-          <div class="row media-object-video">   
-            <ion:article:medias type="video">
-            <div class="video-container">
-              <div class="col-md-12 embed-responsive embed-responsive-16by9">            
-                <iframe src="<ion:media:src />" class="embed-responsive-item media-object-video"> </iframe>              
-              </div>
+        </div>
+        <ion:medias:count type="picture" is_not="0">
+          <div class="row">
+            <div class="col-sm-12">
+              <h2 class="sport-title">Fotogaléria</h2>
             </div>
-            </ion:article:medias>       
+            <ion:article:medias type="picture">
+              <div class="col-xs-6 col-sm-3 col-md-2">
+                <a href="<ion:media:src />" data-lightbox="roadtrip" data-title="<ion:media:title />" class="thumbnail">
+                  <img src="<ion:media:src size="180, 100" method="adaptive" />" alt="<ion:media:title />" >
+                </a>
+              </div>
+            </ion:article:medias>
           </div>
-      </div>
-      </ion:article>
-    </ion:articles>
-  </div>
+        </ion:medias:count>
+        <ion:medias:count type="video" is_not="0">
+          <div class="row">
+            <div class="col-sm-12">
+              <h2 class="sport-title">Videogaléria</h2>
+            </div>
+            <ion:article:medias type="video">
+              <div class="col-sm-6">
+                <div class="video-container">
+                  <div class="embed-responsive embed-responsive-16by9">            
+                    <iframe src="<ion:media:src />" class="embed-responsive-item media-object-video"> </iframe>              
+                  </div>
+                </div>
+              </div>
+            </ion:article:medias>
+          </div>
+        </ion:medias:count>
+      </article>
+    </ion:article>
+  </ion:articles>      
+   
 <ion:partial view="footer" />
-            
