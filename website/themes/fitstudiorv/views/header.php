@@ -39,14 +39,14 @@
   <div class="container">
     <header>   
       <div class="row">         
-        <div class="col-md-4">
+        <div class="col-md-3">
           <a href="<ion:home_url />">
             <h1>Fit Studio Rožňava</h1>
           </a>
         </div>
-        <div class="col-md-8">
+        <div class="col-md-9">
           <nav class="navbar">
-            <div class="navbar-header">
+            <div class="navbar-header <ion:article:name />">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>

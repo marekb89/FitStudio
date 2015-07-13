@@ -33,9 +33,9 @@
           </div>
           <ion:articles limit="6">
             <ion:article>
-              <div class="col-xs-12 col-sm-6 col-md-4 sports-item">
+              <div class="col-xs-12 col-sm-6 col-md-4 sports-item <ion:article:name />">
                 <a href="<ion:article:url />">
-                  <div class="item-inner">
+                  <div class="item-inner <ion:article:name />">
                     <ion:title tag="h3" />
                     <ion:medias type="picture" limit="1">
                       <img src="<ion:media:src size="360, 240" method="adaptive" />" alt="<ion:media:title />" />

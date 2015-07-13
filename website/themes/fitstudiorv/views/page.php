@@ -4,7 +4,7 @@
     <ion:article>
       <article>
         <div class="row">
-          <div class="col-sm-12">
+          <div class="col-sm-12 sport <ion:article:name />">
             <ion:title tag="h1" class="sport-title" />
             <ion:subtitle tag="h2" />
             <ion:content />
@@ -12,7 +12,7 @@
         </div>
         <ion:medias:count type="picture" is_not="0">
           <div class="row">
-            <div class="col-sm-12">
+            <div class="col-sm-12 sport <ion:article:name />">
               <h2 class="sport-title">Fotogaléria</h2>
             </div>
             <ion:article:medias type="picture">
@@ -26,7 +26,7 @@
         </ion:medias:count>
         <ion:medias:count type="video" is_not="0">
           <div class="row">
-            <div class="col-sm-12">
+            <div class="col-sm-12 sport <ion:article:name />">
               <h2 class="sport-title">Videogaléria</h2>
             </div>
             <ion:article:medias type="video">
