@@ -11,6 +11,10 @@ h1 {
   font-size: 30px;
 }
 
+h2 {
+  font-size: 20px;
+}
+
 img {
   max-width: 100%; 
 }
@@ -23,9 +27,9 @@ img {
 
 @media (max-width: 992px){ 
   .navbar-nav > li > a {
-    color: rgba(84,0,66,1);
+    color: #091457;
     background-color: white;
-    border: 3px solid white; 
+    border-left: 3px solid; 
   }
    
   .navbar-nav > li:nth-child(1) > a {
@@ -63,21 +67,21 @@ img {
 
 @media (min-width: 992px){ 
   .navbar-nav > li > a {
-    color: rgba(84,0,66,1);
     background-color: white;
-    transition: background-color 0.3s;
-    border: 3px solid white;
+    transition: all 0.3s;
+    border-top: 3px solid;
+    border-bottom: 3px solid white;
     padding: 5px;
-    margin-right: 8px;   
+    margin-right: 8px;
+    color: #091457;   
   }
   
   .navbar-right > li:last-child {
-    margin-right: 0px;
+    margin-right: 0px; 
   }
   
   .navbar-nav > li:nth-child(1) > a {
     border-top-color: #e02222;
-    
   }
   
   .navbar-nav > li:nth-child(2) > a {
@@ -105,62 +109,121 @@ img {
   }
 }
 
-.navbar-nav > li > a:focus,
-.navbar-nav > li > a:hover,
-.navbar-nav > li > a.active {    
-  color: white;
-  border: 3px solid;
-}
-  
-.navbar-nav > li:nth-child(1) > a:focus,
-.navbar-nav > li:nth-child(1) > a:hover,
-.navbar-nav > li:nth-child(1) > a.active {    
-  background-color: #e02222;
-  border-color: #e02222;
-}
-  
-.navbar-nav > li:nth-child(2) > a:focus,
-.navbar-nav > li:nth-child(2) > a:hover,
-.navbar-nav > li:nth-child(2) > a.active {    
-  background-color: #c2067d;
-  border-color: #c2067d;  
-}
-  
-.navbar-nav > li:nth-child(3) > a:focus,
-.navbar-nav > li:nth-child(3) > a:hover,
-.navbar-nav > li:nth-child(3) > a.active {   
-  background-color: #2a72b0;
-  border-color: #2a72b0;  
-}
-  
-.navbar-nav > li:nth-child(4) > a:focus,
-.navbar-nav > li:nth-child(4) > a:hover,
-.navbar-nav > li:nth-child(4) > a.active {  
-  background-color: #56e61e;
-  border-color: #56e61e;   
-}
-  
-.navbar-nav > li:nth-child(5) > a:focus,
-.navbar-nav > li:nth-child(5) > a:hover,
-.navbar-nav > li:nth-child(5) > a.active {    
-  background-color: #f2e200; 
-  border-color: #f2e200; 
-}
-  
-.navbar-nav > li:nth-child(6) > a:focus,
-.navbar-nav > li:nth-child(6) > a:hover,
-.navbar-nav > li:nth-child(6) > a.active {   
-  background-color: #e8611e;
-  border-color: #e8611e;  
-}
-  
-.navbar-nav > li:nth-child(7) > a:focus,
-.navbar-nav > li:nth-child(7) > a:hover,
-.navbar-nav > li:nth-child(7) > a.active {   
-  background-color: rgba(84,0,66,1);
-  border-color: rgba(84,0,66,1);   
+@media (min-width: 992px){ 
+  .navbar-nav > li > a:focus,
+  .navbar-nav > li > a:hover,
+  .navbar-nav > li > a:active {    
+    color: white;
+    border-bottom: 3px solid;
+  }
+    
+  .navbar-nav > li:nth-child(1) > a:focus,
+  .navbar-nav > li:nth-child(1) > a:hover,
+  .navbar-nav > li:nth-child(1) > a:active {    
+    background-color: #e02222;
+    border-color: #e02222;
+  }
+    
+  .navbar-nav > li:nth-child(2) > a:focus,
+  .navbar-nav > li:nth-child(2) > a:hover,
+  .navbar-nav > li:nth-child(2) > a:active {    
+    background-color: #c2067d;
+    border-color: #c2067d;  
+  }
+    
+  .navbar-nav > li:nth-child(3) > a:focus,
+  .navbar-nav > li:nth-child(3) > a:hover,
+  .navbar-nav > li:nth-child(3) > a:active {   
+    background-color: #2a72b0;
+    border-color: #2a72b0;  
+  }
+    
+  .navbar-nav > li:nth-child(4) > a:focus,
+  .navbar-nav > li:nth-child(4) > a:hover,
+  .navbar-nav > li:nth-child(4) > a:active {  
+    background-color: #56e61e;
+    border-color: #56e61e;   
+  }
+    
+  .navbar-nav > li:nth-child(5) > a:focus,
+  .navbar-nav > li:nth-child(5) > a:hover,
+  .navbar-nav > li:nth-child(5) > a:active {    
+    background-color: #f2e200; 
+    border-color: #f2e200; 
+  }
+    
+  .navbar-nav > li:nth-child(6) > a:focus,
+  .navbar-nav > li:nth-child(6) > a:hover,
+  .navbar-nav > li:nth-child(6) > a:active {   
+    background-color: #e8611e;
+    border-color: #e8611e;  
+  }
+    
+  .navbar-nav > li:nth-child(7) > a:focus,
+  .navbar-nav > li:nth-child(7) > a:hover,
+  .navbar-nav > li:nth-child(7) > a:active {   
+    background-color: rgba(84,0,66,1);
+    border-color: rgba(84,0,66,1);   
+  }
 }
 
+@media (max-width: 992px){ 
+  .navbar-nav > li > a:focus,
+  .navbar-nav > li > a:hover,
+  .navbar-nav > li > a:active {    
+    color: white;
+    border-left: 3px solid;
+  }
+    
+  .navbar-nav > li:nth-child(1) > a:focus,
+  .navbar-nav > li:nth-child(1) > a:hover,
+  .navbar-nav > li:nth-child(1) > a:active {    
+    background-color: #e02222;
+    border-color: #e02222;
+  }
+    
+  .navbar-nav > li:nth-child(2) > a:focus,
+  .navbar-nav > li:nth-child(2) > a:hover,
+  .navbar-nav > li:nth-child(2) > a:active {    
+    background-color: #c2067d;
+    border-color: #c2067d;  
+  }
+    
+  .navbar-nav > li:nth-child(3) > a:focus,
+  .navbar-nav > li:nth-child(3) > a:hover,
+  .navbar-nav > li:nth-child(3) > a:active {   
+    background-color: #2a72b0;
+    border-color: #2a72b0;  
+  }
+    
+  .navbar-nav > li:nth-child(4) > a:focus,
+  .navbar-nav > li:nth-child(4) > a:hover,
+  .navbar-nav > li:nth-child(4) > a:active {  
+    background-color: #56e61e;
+    border-color: #56e61e;   
+  }
+    
+  .navbar-nav > li:nth-child(5) > a:focus,
+  .navbar-nav > li:nth-child(5) > a:hover,
+  .navbar-nav > li:nth-child(5) > a:active {    
+    background-color: #f2e200; 
+    border-color: #f2e200; 
+  }
+    
+  .navbar-nav > li:nth-child(6) > a:focus,
+  .navbar-nav > li:nth-child(6) > a:hover,
+  .navbar-nav > li:nth-child(6) > a:active {   
+    background-color: #e8611e;
+    border-color: #e8611e;  
+  }
+    
+  .navbar-nav > li:nth-child(7) > a:focus,
+  .navbar-nav > li:nth-child(7) > a:hover,
+  .navbar-nav > li:nth-child(7) > a:active {   
+    background-color: rgba(84,0,66,1);
+    border-color: rgba(84,0,66,1);   
+  }
+}
 
 
 @media (min-width: 768px) {  
@@ -179,11 +242,11 @@ img {
   .navbar-nav {
     float: none !important;
     margin: 0px -15px;
-    background-color: rgba(84,0,66,1);
+    background-color: #091457;
   }
 
   .navbar-header {
-    background-color: rgba(84,0,66,1);
+    background-color: #091457;
   }
   
   a.navbar-brand {
@@ -211,6 +274,48 @@ img {
   }
 }
 
+/* News letter */
+
+.news {
+  margin: auto;
+}
+
+.panel-default {
+  border: 2px solid white;
+  border-radius: 0px; 
+}
+
+.panel-default > .panel-heading {
+  background-color: rgba(10, 21, 87, 1);
+  color: white;
+  border-radius: 0px; 
+  background-image: url(../images/bg1.png);
+}
+
+.panel-body {
+  color: #091457;
+  background-image: url(../images/bg1.png); 
+}
+
+/* Slideshow */
+
+.owl-prev {
+  position: absolute;
+  top: 40%;
+  left: 0;  
+}
+
+.owl-next {
+  position: absolute;
+  top: 40%;
+  right: 0;  
+}
+
+.owl-theme .owl-controls .owl-page > span {
+  background-color: #091457;
+}
+
+
 /* Home page */
 .sports-item {
   margin-bottom: 30px;
@@ -219,7 +324,7 @@ img {
 .sport-title {
   position: relative;
   color: white;
-  background-color: rgba(84,0,66,1);
+  background-color: #091457;
   background-image: url(../images/bg1.png);
   padding: 10px;   
   margin-bottom: 20px;
@@ -229,7 +334,7 @@ img {
   position: absolute;
   border-left: 7px solid rgba(0, 0, 0, 0);
   border-right: 7px solid rgba(0, 0, 0, 0);
-  border-top: 7px solid rgba(84,0,66,1);
+  border-top: 7px solid  #091457;
   bottom: -7px;
   content: " ";
   left: 40px;
@@ -307,6 +412,7 @@ img {
   position: relative;
   overflow: hidden;
   max-width: 360px;
+  height: 190px;
 }
 
 .sports-item h3 {
@@ -370,31 +476,6 @@ img {
   z-index: 50;
 }
 
-/*
-.sports-item:nth-child(1n+1) .item-inner:before {
-  background-color: #bc2c18;
-}
-
-.sports-item:nth-child(2n+1) .item-inner:before {
-  background-color: #5b7bb6;
-}
-.sports-item:nth-child(3n+1) .item-inner:before {
-  background-color: #f65e13;  
-}
-
-.sports-item:nth-child(1n+1) .item-inner:after {
-  background-color: #bc2c18;
-}
-
-.sports-item:nth-child(2n+1) .item-inner:after {
-  background-color: #5b7bb6;
-}
- 
-.sports-item:nth-child(3n+1) .item-inner:after {  
- background-color: #f65e13; 
-}
-
-*/
 .sports-item:nth-child(4n+1) .item-inner:before {
   bottom: auto;
   top: -100px;

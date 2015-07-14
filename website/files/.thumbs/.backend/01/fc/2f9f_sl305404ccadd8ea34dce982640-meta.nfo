@@ -1,0 +1,123 @@
+<?php
+
+// legal URL: /Slideshow/sl3.png
+
+$statdata = array (
+  0 => 2,
+  1 => 0,
+  2 => 33206,
+  3 => 1,
+  4 => 0,
+  5 => 0,
+  6 => 2,
+  7 => 1448146,
+  8 => 1436856722,
+  9 => 1436856744,
+  10 => 1436856743,
+  11 => -1,
+  12 => -1,
+  'dev' => 2,
+  'ino' => 0,
+  'mode' => 33206,
+  'nlink' => 1,
+  'uid' => 0,
+  'gid' => 0,
+  'rdev' => 2,
+  'size' => 1448146,
+  'atime' => 1436856722,
+  'mtime' => 1436856744,
+  'ctime' => 1436856743,
+  'blksize' => -1,
+  'blocks' => -1,
+);
+
+$data = array (
+  'mime_type' => 'image/jpeg',
+  'analysis' => 
+  array (
+    'GETID3_VERSION' => '1.9.3-20111213',
+    'filesize' => 1448146,
+    'filename' => 'sl3.png',
+    'filepath' => 'C:/Xampp/htdocs/FitStudio/website/files/Slideshow',
+    'filenamepath' => 'C:/Xampp/htdocs/FitStudio/website/files/Slideshow/sl3.png',
+    'avdataoffset' => 0,
+    'avdataend' => 1448146,
+    'fileformat' => 'jpg',
+    'video' => 
+    array (
+      'dataformat' => 'jpg',
+      'lossless' => false,
+      'bits_per_sample' => 24,
+      'pixel_aspect_ratio' => 1,
+      'resolution_x' => 4288,
+      'resolution_y' => 2848,
+      'compression_ratio' => 0.03952722561699927028566747821969329379498958587646484375,
+    ),
+    'encoding' => 'UTF-8',
+    'mime_type' => 'image/jpeg',
+    'jpg' => 
+    array (
+      'exif' => 
+      array (
+        'FILE' => 
+        array (
+          'FileName' => 'sl3.png',
+          'FileDateTime' => 1436856744,
+          'FileSize' => 1448146,
+          'FileType' => 2,
+          'MimeType' => 'image/jpeg',
+          'SectionsFound' => 'ANY_TAG, IFD0, EXIF',
+        ),
+        'COMPUTED' => 
+        array (
+          'html' => 'width="4288" height="2848"',
+          'Height' => 2848,
+          'Width' => 4288,
+          'IsColor' => 1,
+          'ByteOrderMotorola' => 1,
+          'ApertureFNumber' => 'f/4.0',
+        ),
+        'IFD0' => 
+        array (
+          'Make' => 'NIKON CORPORATION',
+          'Model' => 'NIKON D300',
+          'ExposureTime' => 0.0125000000000000006938893903907228377647697925567626953125,
+        ),
+        'EXIF' => 
+        array (
+          'ExposureTime' => 0.0125000000000000006938893903907228377647697925567626953125,
+          'FNumber' => 4,
+          'ISOSpeedRatings' => 
+          array (
+            0 => 200,
+            1 => 0,
+          ),
+          'DateTimeOriginal' => '2012:04:09 21:08:07',
+          'FocalLength' => 35,
+          'UndefinedTag:0xA434' => '35.0 mm f/1.8',
+        ),
+      ),
+    ),
+  ),
+  'mime_type from file extension' => 'image/png',
+  'thumb250_direct' => '/FitStudio/website/files/.thumbs/.backend/01/fc/2f9f_sl305404ccadd8ea34dce982640-500x500.png',
+  'thumb250_info' => 
+  array (
+    0 => 500,
+    1 => 332,
+    2 => 3,
+    3 => 'width="500" height="332"',
+    'bits' => 8,
+    'mime' => 'image/png',
+  ),
+  'thumb48_direct' => '/FitStudio/website/files/.thumbs/.backend/01/fc/2f9f_sl305404ccadd8ea34dce982640-120x120.png',
+  'thumb48_info' => 
+  array (
+    0 => 120,
+    1 => 80,
+    2 => 3,
+    3 => 'width="120" height="80"',
+    'bits' => 8,
+    'mime' => 'image/png',
+  ),
+);

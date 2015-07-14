@@ -16,12 +16,20 @@
           </div>        
         </div>         
         <div class="col-sm-5 col-md-4">
+        <ion:page id="novinky">
+          <ion:articles>
+            <ion:article>
           <div class="panel panel-default">
-            <div class="panel-heading">Panel heading without title</div>
+            <div class="panel-heading">
+              <ion:article:title tag="h2" class="news" />
+            </div>
             <div class="panel-body">
-              Panel content
+              <ion:content />
             </div>
           </div>
+              </ion:article>
+            </ion:articles>
+          </ion:page>
         </div>
       </div>      
     </section>    

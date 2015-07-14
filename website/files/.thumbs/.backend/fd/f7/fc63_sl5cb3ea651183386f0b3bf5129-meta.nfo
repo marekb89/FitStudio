@@ -1,0 +1,156 @@
+<?php
+
+// legal URL: /Slideshow/sl5.png
+
+$statdata = array (
+  0 => 2,
+  1 => 0,
+  2 => 33206,
+  3 => 1,
+  4 => 0,
+  5 => 0,
+  6 => 2,
+  7 => 333489,
+  8 => 1436857507,
+  9 => 1436857576,
+  10 => 1436857517,
+  11 => -1,
+  12 => -1,
+  'dev' => 2,
+  'ino' => 0,
+  'mode' => 33206,
+  'nlink' => 1,
+  'uid' => 0,
+  'gid' => 0,
+  'rdev' => 2,
+  'size' => 333489,
+  'atime' => 1436857507,
+  'mtime' => 1436857576,
+  'ctime' => 1436857517,
+  'blksize' => -1,
+  'blocks' => -1,
+);
+
+$data = array (
+  'mime_type' => 'image/png',
+  'analysis' => 
+  array (
+    'GETID3_VERSION' => '1.9.3-20111213',
+    'filesize' => 333489,
+    'filename' => 'sl5.png',
+    'filepath' => 'C:/Xampp/htdocs/FitStudio/website/files/Slideshow',
+    'filenamepath' => 'C:/Xampp/htdocs/FitStudio/website/files/Slideshow/sl5.png',
+    'avdataoffset' => 0,
+    'avdataend' => 333489,
+    'fileformat' => 'png',
+    'video' => 
+    array (
+      'dataformat' => 'png',
+      'lossless' => false,
+      'resolution_x' => 800,
+      'resolution_y' => 300,
+      'bits_per_sample' => 32,
+      'compression_ratio' => 0.347384375000000023003821070233243517577648162841796875,
+    ),
+    'encoding' => 'UTF-8',
+    'mime_type' => 'image/png',
+    'png' => 
+    array (
+      'IHDR' => 
+      array (
+        'header' => 
+        array (
+          'data_length' => 13,
+          'type_text' => 'IHDR',
+          'type_raw' => 1229472850,
+          'data' => '' . "\0" . '' . "\0" . ' ' . "\0" . '' . "\0" . ',' . "\0" . '' . "\0" . '' . "\0" . '',
+          'crc' => 992859962,
+          'flags' => 
+          array (
+            'ancilliary' => false,
+            'private' => false,
+            'reserved' => false,
+            'safe_to_copy' => false,
+          ),
+        ),
+        'width' => 800,
+        'height' => 300,
+        'raw' => 
+        array (
+          'bit_depth' => 8,
+          'color_type' => 6,
+          'compression_method' => 0,
+          'filter_method' => 0,
+          'interlace_method' => 0,
+        ),
+        'compression_method_text' => 'deflate/inflate',
+        'color_type' => 
+        array (
+          'palette' => false,
+          'true_color' => true,
+          'alpha' => true,
+        ),
+      ),
+      'IDAT' => 
+      array (
+        0 => 
+        array (
+          'header' => 
+          array (
+            'data_length' => 333432,
+            'type_text' => 'IDAT',
+            'type_raw' => 1229209940,
+            'crc' => 4104864123,
+            'flags' => 
+            array (
+              'ancilliary' => false,
+              'private' => false,
+              'reserved' => false,
+              'safe_to_copy' => false,
+            ),
+          ),
+        ),
+      ),
+      'IEND' => 
+      array (
+        'header' => 
+        array (
+          'data_length' => 0,
+          'type_text' => 'IEND',
+          'type_raw' => 1229278788,
+          'crc' => 2923585666,
+          'flags' => 
+          array (
+            'ancilliary' => false,
+            'private' => false,
+            'reserved' => false,
+            'safe_to_copy' => false,
+          ),
+          'data' => '',
+        ),
+      ),
+      'encoding' => 'UTF-8',
+    ),
+  ),
+  'mime_type from file extension' => 'image/png',
+  'thumb250_direct' => '/FitStudio/website/files/.thumbs/.backend/fd/f7/fc63_sl5cb3ea651183386f0b3bf5129-500x500.png',
+  'thumb250_info' => 
+  array (
+    0 => 500,
+    1 => 188,
+    2 => 3,
+    3 => 'width="500" height="188"',
+    'bits' => 8,
+    'mime' => 'image/png',
+  ),
+  'thumb48_direct' => '/FitStudio/website/files/.thumbs/.backend/fd/f7/fc63_sl5cb3ea651183386f0b3bf5129-120x120.png',
+  'thumb48_info' => 
+  array (
+    0 => 120,
+    1 => 45,
+    2 => 3,
+    3 => 'width="120" height="45"',
+    'bits' => 8,
+    'mime' => 'image/png',
+  ),
+);
