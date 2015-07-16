@@ -1,0 +1,82 @@
+<?php
+
+// legal URL: /Kick Box/6_1.jpg
+
+$statdata = array (
+  0 => 2,
+  1 => 0,
+  2 => 33206,
+  3 => 1,
+  4 => 0,
+  5 => 0,
+  6 => 2,
+  7 => 209249,
+  8 => 1437032493,
+  9 => 1437032493,
+  10 => 1437032493,
+  11 => -1,
+  12 => -1,
+  'dev' => 2,
+  'ino' => 0,
+  'mode' => 33206,
+  'nlink' => 1,
+  'uid' => 0,
+  'gid' => 0,
+  'rdev' => 2,
+  'size' => 209249,
+  'atime' => 1437032493,
+  'mtime' => 1437032493,
+  'ctime' => 1437032493,
+  'blksize' => -1,
+  'blocks' => -1,
+);
+
+$data = array (
+  'mime_type' => 'image/jpeg',
+  'analysis' => 
+  array (
+    'GETID3_VERSION' => '1.9.3-20111213',
+    'filesize' => 209249,
+    'filename' => '6_1.jpg',
+    'filepath' => 'C:/Xampp/htdocs/FitStudio/website/files/Kick Box',
+    'filenamepath' => 'C:/Xampp/htdocs/FitStudio/website/files/Kick Box/6_1.jpg',
+    'avdataoffset' => 0,
+    'avdataend' => 209249,
+    'fileformat' => 'jpg',
+    'video' => 
+    array (
+      'dataformat' => 'jpg',
+      'lossless' => false,
+      'bits_per_sample' => 24,
+      'pixel_aspect_ratio' => 1,
+      'resolution_x' => 800,
+      'resolution_y' => 531,
+      'compression_ratio' => 0.16419413057124920829465963834081776440143585205078125,
+    ),
+    'encoding' => 'UTF-8',
+    'mime_type' => 'image/jpeg',
+  ),
+  'mime_type from file extension' => 'image/jpeg',
+  'thumb250_direct' => '/FitStudio/website/files/.thumbs/.backend/e1/9c/405d_6_142238de64576a58d6e232041-500x500.jpg',
+  'thumb250_info' => 
+  array (
+    0 => 500,
+    1 => 332,
+    2 => 2,
+    3 => 'width="500" height="332"',
+    'bits' => 8,
+    'channels' => 3,
+    'mime' => 'image/jpeg',
+  ),
+  'thumb48_direct' => '/FitStudio/website/files/.thumbs/.backend/e1/9c/405d_6_142238de64576a58d6e232041-120x120.jpg',
+  'thumb48_info' => 
+  array (
+    0 => 120,
+    1 => 80,
+    2 => 2,
+    3 => 'width="120" height="80"',
+    'bits' => 8,
+    'channels' => 3,
+    'mime' => 'image/jpeg',
+  ),
+);

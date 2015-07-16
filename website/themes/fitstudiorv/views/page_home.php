@@ -56,7 +56,10 @@
         </ion:page>
       </div>
     </section>
-   <ion:partial view="rozvrh" />    
+    <section id="rozvrh">
+      <ion:partial view="rozvrh" />
+    </section>
+       
    <script>
     $(document).ready(function() {
       $("#owl-demo").owlCarousel({

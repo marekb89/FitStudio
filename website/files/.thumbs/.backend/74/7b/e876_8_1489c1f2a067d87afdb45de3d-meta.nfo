@@ -1,0 +1,82 @@
+<?php
+
+// legal URL: /Iron Body/8_1.jpg
+
+$statdata = array (
+  0 => 2,
+  1 => 0,
+  2 => 33206,
+  3 => 1,
+  4 => 0,
+  5 => 0,
+  6 => 2,
+  7 => 262602,
+  8 => 1437033066,
+  9 => 1437033066,
+  10 => 1437033066,
+  11 => -1,
+  12 => -1,
+  'dev' => 2,
+  'ino' => 0,
+  'mode' => 33206,
+  'nlink' => 1,
+  'uid' => 0,
+  'gid' => 0,
+  'rdev' => 2,
+  'size' => 262602,
+  'atime' => 1437033066,
+  'mtime' => 1437033066,
+  'ctime' => 1437033066,
+  'blksize' => -1,
+  'blocks' => -1,
+);
+
+$data = array (
+  'mime_type' => 'image/jpeg',
+  'analysis' => 
+  array (
+    'GETID3_VERSION' => '1.9.3-20111213',
+    'filesize' => 262602,
+    'filename' => '8_1.jpg',
+    'filepath' => 'C:/Xampp/htdocs/FitStudio/website/files/Iron Body',
+    'filenamepath' => 'C:/Xampp/htdocs/FitStudio/website/files/Iron Body/8_1.jpg',
+    'avdataoffset' => 0,
+    'avdataend' => 262602,
+    'fileformat' => 'jpg',
+    'video' => 
+    array (
+      'dataformat' => 'jpg',
+      'lossless' => false,
+      'bits_per_sample' => 24,
+      'pixel_aspect_ratio' => 1,
+      'resolution_x' => 600,
+      'resolution_y' => 900,
+      'compression_ratio' => 0.1620999999999999940936135089941672049462795257568359375,
+    ),
+    'encoding' => 'UTF-8',
+    'mime_type' => 'image/jpeg',
+  ),
+  'mime_type from file extension' => 'image/jpeg',
+  'thumb250_direct' => '/FitStudio/website/files/.thumbs/.backend/74/7b/e876_8_1489c1f2a067d87afdb45de3d-500x500.jpg',
+  'thumb250_info' => 
+  array (
+    0 => 333,
+    1 => 500,
+    2 => 2,
+    3 => 'width="333" height="500"',
+    'bits' => 8,
+    'channels' => 3,
+    'mime' => 'image/jpeg',
+  ),
+  'thumb48_direct' => '/FitStudio/website/files/.thumbs/.backend/74/7b/e876_8_1489c1f2a067d87afdb45de3d-120x120.jpg',
+  'thumb48_info' => 
+  array (
+    0 => 80,
+    1 => 120,
+    2 => 2,
+    3 => 'width="80" height="120"',
+    'bits' => 8,
+    'channels' => 3,
+    'mime' => 'image/jpeg',
+  ),
+);

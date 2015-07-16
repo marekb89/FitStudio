@@ -25,6 +25,7 @@
      
     <!-- Include js plugin -->
     <script src="<ion:theme_url/>assets/js/owl.carousel.js"></script>
+    <script src="<ion:theme_url/>assets/js/main.js"></script>
     
     <!-- lightbox -->
     <script src="<ion:theme_url/>assets/lightbox/js/lightbox.min.js"></script>
@@ -36,6 +37,7 @@
     <link href="<ion:theme_url/>assets/css/main.css" rel="stylesheet"> 
   </head>
   <body>
+  <img src="<ion:theme_url/>assets/images/bc1.png" id="bg" alt="Background" />
   <div class="container">
     <header>   
       <div class="row">         
@@ -55,9 +57,9 @@
               </button>
             </div><!-- /.navbar-header -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ion:navigation active_class="active" tag="ul" class="nav navbar-nav navbar-right" menu="main">
+              <ion:navigation tag="ul" class="nav navbar-nav navbar-right" menu="main">
                 <li>
-                  <a href="<ion:url />"><ion:title /></a>
+                  <a href="<ion:url />"<ion:is_active> class="active"</ion:is_active>><ion:title /></a>
                 </li>
               </ion:navigation>
             </div><!-- /.navbar-collapse -->
